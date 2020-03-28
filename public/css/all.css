@@ -1,0 +1,27 @@
+.header {
+  height: 15vh;
+  background-color: gray;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > .h-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > .footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 8rem;
+  background-color: pink;
+}
