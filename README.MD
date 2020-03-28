@@ -1,6 +1,9 @@
-# test app
+# Initial a webapp scalfold
 
-"test website" draft is here.
+> initial a "webapp" draft is here.
+> what I use: 
+> * dockerfile
+> * serve / http-server
 
 # How to Use
 
