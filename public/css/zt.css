@@ -1,0 +1,27 @@
+.fxcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border9 {
+  border: 9px solid pink;
+}
+
+.border3 {
+  border: 3px solid lightpink;
+}
+
+.border1 {
+  border: 1px solid red;
+}
+
+.imgtest {
+  max-width: 30%;
+  height: auto;
+}
+
+.imgcard {
+  max-width: 50%;
+  height: auto;
+}
