@@ -1,9 +1,3 @@
-.fxcenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .border9 {
   border: 9px solid pink;
 }
@@ -24,4 +18,9 @@
 .imgcard {
   max-width: 50%;
   height: auto;
+}
+
+
+.header-class {
+  min-height: 100vh;
 }
