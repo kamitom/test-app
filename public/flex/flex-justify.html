@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-wrap</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .flex {
+        display: flex;
+        height: 500px;
+        padding: 15px;
+        background-color: #61a0f8;
+        flex-direction: row;
+        /* // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around; */
+        justify-content: center;
+
+        /* // 修改以下值試試看 flex-start | flex-end | center | baseline | stretch; */
+        align-items: center;
+      }
+
+      .item {
+        width: 60px;
+        height: 120px;
+        background-color: #f08bc3;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+      }
+
+      .flex-2 {
+        width: 120px;
+        height: 240px;
+        background-color: #f08bc3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-center">
+      <h2>flex justify test</h2>
+    </header>
+    <div class="flex">
+      <div class="item">1</div>
+      <div class="item flex-2">2</div>
+      <div class="item">3</div>
+      <!--  可打開以下註解增加數量  -->
+      <!--   <div class="item flex-2">2</div>
+      <div class="item">3</div> -->
+    </div>
+    <div class="p-3">
+      <a href="/" class="btn btn-outline-info">go home page</a>
+      <a href="/flex/flex-wrap" class="btn btn-outline-info">go flex-wrap test</a>
+    </div>
+  </body>
+</html>

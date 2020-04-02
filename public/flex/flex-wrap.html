@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-wrap</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .flex {
+        display: flex;
+        height: 300px;
+        padding: 15px;
+        background-color: #61a0f8;
+        /* // 修改以下值試試看 wrap | nowrap | wrap | wrap-reverse */
+        flex-wrap: wrap-reverse;
+      }
+
+      .item {
+        flex: 0 0 30%;
+        background-color: #f08bc3;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+      }
+
+      .flex-2 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 60%;
+        background-color: #f08bc3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-center">
+      <h2>flex wrap test</h2>
+    </header>
+    <div class="flex">
+      <div class="item">1</div>
+      <div class="item flex-2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">4</div>
+    </div>
+    <div class="p-3">
+      <a href="/" class="btn btn-outline-info">go home page</a>
+      <a href="/flex/flex-justify" class="btn btn-outline-info">test flex-justify</a>
+    </div>
+  </body>
+</html>
