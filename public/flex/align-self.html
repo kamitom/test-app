@@ -21,21 +21,18 @@
     />
 
     <style>
-      .row-class {
-        border: solid 1px orange;
-      }
-
       .flex {
         display: flex;
-        height: 300px;
+        height: 400px;
         padding: 15px;
         background-color: #61a0f8;
-        /* // 修改以下值試試看 row | row-reverse | column | column-reverse; */
-        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
       }
 
       .item {
-        flex: 1;
+        width: 60px;
+        height: 120px;
         background-color: #f08bc3;
         margin: 5px;
         display: flex;
@@ -46,26 +43,39 @@
       }
 
       .flex-2 {
-        flex-grow: 2;
-        flex-shrink: 1;
-        flex-basis: 0%;
+        width: 120px;
+        height: 240px;
         background-color: #f08bc3;
+      }
+
+      .align-self {
+        /* // 修改以下值試試看  auto | flex-start | flex-end | center | baseline | stretch */
+        align-self: flex-start;
+      }
+
+      .align-self8 {
+        align-self: center;
       }
     </style>
   </head>
   <body>
-    <h2 class="text-center">test flex</h2>
-    <div class="flex">
-      <div class="item">1</div>
-      <div class="item flex-2">2</div>
-      <div class="item">3</div>
-    </div>
-    <div class="p-3">
-      <a href="/center" class="btn btn-outline-info">hello a.btn.btn-outline-info</a>
-      <a href="/flex/flex-wrap.html" class="btn btn-outline-info">flex-wrap test</a>
-      <a href="/flex/basic" class="btn btn-outline-primary">html basic</a>
-    </div>
+    <div class="container">
+      <div class="flex">
+        <div class="item">1</div>
+        <div class="item flex-2">2</div>
+        <div class="item align-self">3</div>
+        <!--  可打開以下註解增加數量  -->
+        <div class="item flex-2">2</div>
+        <div class="item">3</div>
+        <div class="item align-self8">8</div>
+      </div>
 
+      <div class="p-5">
+        <a href="/flex/flex-wrap" class="btn btn-outline-danger"
+          >go to flex-wrap</a
+        >
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
