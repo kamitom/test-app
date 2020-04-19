@@ -1,0 +1,12 @@
+[
+  {
+    "name": "corp A.",
+    "ceo": "tom chen",
+    "numberOfEmployees": 3000
+  },
+  {
+    "name": "corp B.",
+    "ceo": null,
+    "numberOfEmployees": 3
+  }
+]

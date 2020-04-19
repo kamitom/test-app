@@ -1,0 +1,32 @@
+.testdiv {
+  height: 300px;
+  width: 400px;
+  border: 3px solid lightsalmon;
+}
+
+.testBox {
+  background-color: #d5d9de;
+  border: 1px solid #a9acb0;
+  padding: 10px 20px;
+}
+
+.callOuts {
+  border: 1px solid #d7d8da;
+}
+
+.callOuts img {
+  height: auto;
+  width: 100px;
+}
+
+.logo {
+  width: auto;
+  height: 150px;
+}
+
+.banner {
+  height: 150px;
+  background-image: url('../img/shutterstock_116403520.jpg');
+  background-size: cover;
+  background-position: center -100px;
+}
