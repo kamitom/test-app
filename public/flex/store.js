@@ -1,10 +1,4 @@
-if (document.readyState == 'loading') {
-  document.addEventListener('DOMContentLoaded', ready);
-} else {
-  ready();
-}
-
-function ready() {
+const ready = () => {
   let removeCartItemButtons = document.getElementsByClassName('btn-danger');
   console.log(removeCartItemButtons);
   for (let index = 0; index < removeCartItemButtons.length; index++) {
@@ -12,15 +6,43 @@ function ready() {
 
     button.addEventListener('click', removeCartItem);
   }
-}
 
-function removeCartItem(event) {
+  let quantityInputs = document.getElementsByClassName('cart-quantity-input');
+  // console.log('qty input: ', quantityInputs);
+  for (let index = 0; index < quantityInputs.length; index++) {
+    const input = quantityInputs[index];
+    input.addEventListener('change', quantityChanged);
+  }
+
+  let addToCartButtons = document.getElementsByClassName('shop-item-button');
+  for (let index = 0; index < addToCartButtons.length; index++) {
+    const button = addToCartButtons[index];
+    button.addEventListener('click', addToCartClicked);
+  }
+};
+
+const addToCartClicked = (event) => {
+  console.log('addToCart clicked: ', event.target);
+};
+
+const quantityChanged = (event) => {
+  console.log('changed!');
+  console.log(event.target);
+
+  let input = event.target;
+  if (isNaN(input.value) || input.value <= 0) {
+    input.value = 1;
+  }
+  updateCartTotal();
+};
+
+const removeCartItem = (event) => {
   console.log('clicked!!!!');
   console.log(event.target);
   let buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
-}
+};
 
 const updateCartTotal = () => {
   let cartItemContainer = document.getElementsByClassName('cart-items')[0];
@@ -40,6 +62,14 @@ const updateCartTotal = () => {
     console.log(quantityElement, priceElement);
   }
 
+  total = Math.round(total * 100) / 100;
+
   document.getElementsByClassName('cart-total-price')[0].innerText =
     '$' + total;
 };
+
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', ready);
+} else {
+  ready();
+}
