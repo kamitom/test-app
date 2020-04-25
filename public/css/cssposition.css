@@ -1,0 +1,29 @@
+* {
+  font-size: 30px;
+  /* position: relative; */
+}
+
+.parent {
+  background-color: blue;
+  position: relative;
+  margin-top: 20px;
+  height: 200vh;
+}
+
+.chd-1 {
+  background-color: limegreen;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+.chd-2 {
+  background-color: lightcoral;
+}
+.chd-3 {
+  background-color: lightslategrey;
+}
+
+.child {
+  /* padding: 30px; */
+  color:white;
+}
