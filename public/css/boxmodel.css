@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+
+@font-face {
+  font-family: 'Booter - Zero Zero';
+  src: url('../fonts/Booter - Zero Zero.woff') format('woff'),
+    url('../fonts//Booter - Zero Zero.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Booter - Zero Zero'; */
+  font-family: Metal;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background-color: lightpink;
+  border: 10px solid #9851e0;
+  padding: 20px;
+  margin: 15px auto;
+  width: 100px;
+  height: 100px;
+  /* box-sizing: border-box; */
+}
+
+.box2 {
+  background-color: lightgreen;
+  border: 25px solid red;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 35px;
+}
